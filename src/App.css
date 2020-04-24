@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  padding: 0 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-fluid{
+  padding: 0px !important;
 }
 
 .App-logo {
@@ -15,17 +21,70 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: white;
+  font-weight: 700;
+  margin : 0 !important;
 }
+.App-footer {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: white;
+  margin : 5 !important;
+}
+.back {
+    background-color: #002C57 !important;
+    border-color: #002C57 !important;
+    margin-top: 5px;
+}
+.row{
+  margin: 0px !important;
+}
+
+.country-select {
+  margin: 1rem 0;
+ }
 
 .App-link {
   color: #61dafb;
+}
+
+.today-row>div {
+  font-weight: 700;
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin:10px;
+  padding: 10px;
+}
+
+.confirmed{
+  color: #002C57;
+  background-image: linear-gradient(rgb(165, 201, 253) 0%, rgb(189, 229, 252) 100%);
+}
+
+.recovered{
+  color: #005C25;
+  background-image: linear-gradient(rgb(155, 232, 156) 0%, rgb(205, 249, 125) 100%);
+}
+
+.deaths{
+  color: #5A0401;
+  background-image: linear-gradient(rgb(254, 134, 131) 0%, rgb(255, 157, 155) 100%);
+}
+
+.active{
+  color: #582801;
+  background-image: linear-gradient(rgb(246, 206, 104) 0%, rgb(253, 166, 130) 100%);
 }
 
 @keyframes App-logo-spin {
